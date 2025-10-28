@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Заказ</title>
+    <link rel='stylesheet' href="./css/01.css"
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h1> ООО "ХЛЕБОЗАВОД №67" </h1>
+    <h2>
+      <table class="responsive-table">
+        <tbody>
+          <tr>
+            <td><b>Главная страница</b></td>
+            <td><a href="./products.html">Продукция</a></td>
+            <td><a href="./order.html">Заказ</a></td>
+            <td><a href="./contact.html">Связаться с нами</a></td>
+            <td><a href="./products.html#prices">Цены</a></td>
+            <td><a href="https://github.com/fvbrikoshin" target="_self"><img src="./img/github.png" width="90px" height="90px"></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </h2>
+  <h3>
+    <p>ФОРМА ДЛЯ ОТПРАВКИ ЗАКАЗА</p>
+  </h3>
+  <p>ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ</p>
+  <ol>
+    <li>Заполнить форму</li>
+    <li>Нажать кнопку "Отправить" внизу</li>
+  </ol>
+  <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <ul>
+      <p>Имя:
+        <br><input id="nomen" name="nomen" value="Ваше имя">
+      </p>
+      <p>Фамилия:
+        <br><input id="surnomen" name="surnomen" value="Ваша фамилия">
+      </p>
+      <p>Адреc:
+        <br><textarea cols="60" rows="4" id="task" name="adres">Ваш адрес</textarea>
+      </p>
+      <p>Необходимые товары:
+        <br><textarea cols="60" rows="4" id="task" name="spisok">Ваши товары</textarea>
+      </p>
+      <p>Электронная почта:
+        <br><input id="mail" name="mail" value="abc@example.com">
+      </p>
+      <p>Номер телефона:
+        <br><input id="phone" name="phone" value="+7(123)456-78-90">
+      </p>
+      <p>Вид доставки:
+        <ul>
+          <li>Обычная<input type="radio" name="deliv" value="regular" checked></li>
+          <li>Ускоренная<input type="radio" name="deliv" value="faster"></li>
+        </ul>
+      </p>
+      <p>Желаемая дата доставки<br><input type="date" name="datadostavki" value="2000-01-01"></p>
+      <p>Промокод (по желанию)<br><input type="password" name="promocode" value=""></p>
+      <p>Я принимаю условия пользовательского соглашения<input type="checkbox" value=""></p>
+      <input type="hidden" id="overid" name="orderid" value="12345">
+      <p><input id="send" type="button" value="Отправить"></p>
+    </form>
+    <p id="melk">© ООО "ХЛЕБОЗАВОД №67" 2000-2025</p>
+    <p id="melk">Все права защищены</p>
+    <p id="melk">Вся информация на данном сайте является вымыслом. Все совпадения с реальным положением дел случайны. Я просто создал этот сайт в качестве практического материала и ради получения оценки.</p>
+    <p id="melk"><a id="melk" href="https://github.com/fvbrikoshin" target="_blank">Github разработчика</a></p>
+  </body>
+<script src="./js/order.js"></script>
+</html>
