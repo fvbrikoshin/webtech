@@ -1,0 +1,100 @@
+a {
+  font-family: verdana;
+  color: OliveDrab;
+  font-size: 20px;
+}
+
+body {
+  background-color: BlanchedAlmond;
+}
+
+.container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+  text-align: center;
+}
+h1 {
+  block-size: 120px;
+  background-color: DarkOrange;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+  font-family: bahnschrift;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 9%;
+}
+
+h2 {
+  block-size: 90px;
+  background-color: rgb(255, 183, 102);
+  color: white;
+  font-size: 20px;
+  font-family: verdana;
+  text-align: center;
+  line-height: 90px;
+}
+
+h3 {
+  text-align: center;
+}
+
+li {
+  font-family: verdana;
+  font-size: 15px;
+  list-style-position: inside;
+}
+
+#melk {
+  font-family: verdana;
+  font-size: 10px;
+  text-align: left;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.photo-block {
+    margin-right: 70px;
+}
+
+.photo-block:last-child {
+    margin-right: 0;
+}
+
+.photo-block img {
+    margin-bottom: 10px;
+    border: 3px ridge black;
+}
+
+.photo-block p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.responsive-table th,
+.responsive-table td {
+  width: 17%;
+  text-align: center;
+}
+
+.wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
