@@ -6,10 +6,10 @@
   <title>Связаться с нами</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body id="top>
+<body id="top">
   <header class="header">
     <div class="header-container">
-      <nav class="main-nav">
+      <nav class="navigator">
         <ul class="main-menu">
           <li class="main-menu-item">
             <a class="main-menu-link" href="index.html" data-path="index.html">Главная страница</a>
@@ -33,37 +33,37 @@
   <h2 class="section-title">Форма для заполнения</h2>
     <form class="contact-form" action="https://www.bing.com/search?" method="post">
       <div class="form-group">
-        <label class="form-label">Ваше имя</label>
+        <label class="form-question">Ваше имя</label>
         <input class="form-input" type="text" name="firstname" placeholder="Ваше имя" required="">
       </div>
 
       <div class="form-group">
-        <label class="form-label">Фамилия</label>
+        <label class="form-question">Фамилия</label>
         <input class="form-input" type="text" name="lastname" placeholder="Ваша фамилия" required="">
       </div>
 
       <div class="form-group">
-        <label class="form-label">Номер региона</label>
+        <label class="form-question">Номер региона</label>
         <input class="form-input" type="number" name="group" placeholder="197" required="">
       </div>
 
       <div class="form-group">
-        <label class="form-label">Номер телефона</label>
+        <label class="form-question">Номер телефона</label>
         <input class="form-input" type="tel" name="phone" placeholder="+X (XXX) XXX-XX-XX" required="">
       </div>
 
       <div class="form-group">
-        <label class="form-label">Электронная почта</label>
+        <label class="form-question">Электронная почта</label>
         <input class="form-input" type="email" name="email" placeholder="abc@example.com" required="">
       </div>
 
       <div class="form-group">
-        <label class="form-label">Дата отправки</label>
+        <label class="form-question">Дата отправки</label>
         <input class="form-input" type="date" name="sent_date" required="">
       </div>
-      
+      <p>Важность запроса</p>
       <fieldset class="form-fieldset">
-        <legend class="form-legend">Важность запроса</legend>
+        <legend class="form-legend"></legend>
         <label class="form-option">
           <input class="form-radio" type="radio" name="importance" value="normal" checked="" required="">
           Не срочно
