@@ -1,0 +1,526 @@
+/* ОБЩИЕ НАСТРОЙКИ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bahnschrift', Arial, sans-serif;
+  background-color: #00bcff;
+  color: #000000;
+}
+
+/* "ГОЛОВА" И ГЛАВНАЯ ЧАСТЬ */
+.header {
+  width: 100%;
+  background-color: #00bcff;
+  border-bottom: 0.3vw solid #000000;
+}
+
+.header-container {
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 0.79vw 0;
+}
+
+/* НАВИГАЦИЯ */
+.main-nav {
+  width: 100%;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 3.47vw;
+  align-items: center;
+}
+
+.main-menu-link {
+  text-decoration: none;
+  font-size: 1.39vw;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0.25vw 0;
+  border-bottom: 0.15vw solid transparent;
+  transition: color 0.1s ease, border-color 0.1s ease;
+}
+
+.main-menu-link:hover {
+  color: #000000;
+}
+
+.main-menu-link.active {
+  color: #000000;
+  border-bottom: 0.2vw solid #1c1c1c;
+}
+
+/* СОДЕРЖАНИЕ */
+.page-container {
+  max-width: 75vw;
+  margin: 2.5vw auto;
+  padding: 0 20vw 0 2.5vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.page-title {
+  font-size: 2.5vw;
+  margin-bottom: 1.4vw;
+  color: #000000;
+}
+
+/* ЗАГОЛОВКИ, ТЕКСТ */
+.section-title {
+  font-size: 1.5vw;
+  margin-top: 2.3vw;
+  margin-bottom: 0.7vw;
+}
+
+.section-text {
+  font-size: 1vw;
+  line-height: 1.6;
+  margin-bottom: 1vw;
+}
+
+.section-text.note {
+  font-size: 0.90vw;
+  color: #000000;
+}
+
+/* СПИСКИ */
+.list {
+  font-size: 1vw;
+  line-height: 1.5;
+  margin-left: 1.4vw;
+  margin-bottom: 1.1vw;
+}
+
+.list-inner {
+  list-style-type: circle;
+  margin-left: 1.4vw;
+  margin-top: 0.7vw;
+}
+
+.list-item {
+  margin-bottom: 0.3vw;
+}
+
+.thumb-link {
+  display: inline-block;
+  margin-top: 1vw;
+}
+
+.thumb-image {
+  display: block;
+  border: 0.15vw solid #ffffff;
+  border-radius: 0.4vw;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* hover-изменение */
+.thumb-image:hover {
+  transform: scale(1.2);
+}
+
+
+/* ТАБЛИЦЫ */
+.table-block {
+  margin-top: 1.67vw;
+  margin-bottom: 1.67vw;
+  overflow-x: auto;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.15vw solid #000000;
+  background: url('img/table_bg.jpg') center / cover no-repeat;
+}
+
+.info-table th,
+.info-table td {
+  border: 0.15vw solid #000000;
+  padding: 0.8vw 1.1vw;
+}
+
+.info-table-head {
+  font-size: 1vw;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.8vw 1.1vw;
+  border-bottom: 0.15vw solid #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.info-table-cell {
+  font-size: 1vw;
+  line-height: 1.5;
+  padding: 0.8vw 1.1vw;
+  border-bottom: 0.075vw solid #dadada;
+  vertical-align: top;
+  color: #000000;
+}
+
+.image-cell {
+  text-align: center;
+  width: 9.75vw;
+}
+
+.link-cell {
+  width: 15vw;
+}
+
+
+/*  ФОРМА КОНТАКТОВ (СТРАНИЦА "КОНТАКТЫ") */
+
+/* общая обёртка формы */
+.contact-form,
+.review-form {
+  margin-top: 2.08vw;
+  max-width: 41.67vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.11vw;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42vw;
+}
+
+.form-label {
+  font-size: 1vw;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.form-input {
+  padding: 0.55vw 0.7vw;
+  font-size: 1vw;
+  font-family: 'Bahnschrift', Arial, sans-serif;
+  border: 0.15vw solid #ffffff;
+  border-radius: 0.3vw;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.1s ease,
+    box-shadow 0.1s ease,
+    transform 0.05s ease;
+}
+
+.form-input::placeholder {
+  color: #888888;
+  font-size: 0.9vw;
+}
+
+.form-input:focus {
+  border-color: #888888;
+  box-shadow: 0 0 0 0.14vw rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.07vw);
+}
+
+
+.form-actions {
+  margin-top: 0.7vw;
+}
+
+.form-button {
+  display: inline-block;
+  padding: 0.7vw 1.67vw;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: 'Bahnschrift', Arial, sans-serif;
+  color: #ffffff;
+  background-color: #00bcff;
+  border: 0.2vw solid #ffffff;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background-color 0.1s ease,
+    transform 0.05s ease,
+    box-shadow 0.1s ease;
+}
+
+/* hover-эффект на кнопке */
+.form-button:hover {
+  background-color: #000000;
+  box-shadow: 0 0.3vw 0 #00bcff;
+  transform: translateY(-0.14vw);
+}
+
+.form-button:active {
+  box-shadow: 0 0.07vw 0 #000000;
+  transform: translateY(0);
+}
+
+/* ФОРМА ОТЗЫВА / ЗАКАЗА (СТРАНИЦА "ОТЗЫВЫ") */
+
+.form-fieldset {
+  border: 0.15vw solid #ffffff;
+  border-radius: 0.3vw;
+  padding: 0.8vw 1vw 0.7vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55vw;
+}
+
+.form-legend {
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 0 0.4vw;
+}
+
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 0.55vw;
+  font-size: 1vw;
+}
+
+/* радио-кнопки */
+.form-radio {
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+  accent-color: #0000ff;
+}
+
+/* картинки */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  margin-top: 2vw;
+}
+
+.gallery-card {
+  background-color: #ffffff;
+  border: 0.2vw solid #1c1c1c;
+  border-radius: 0.42vw;
+  padding: 0.7vw;
+  box-shadow: 0 0.3vw 0 #1c1c1c;
+  transition: transform 0.1s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-0.35vw);
+}
+
+
+.gallery-card img {
+  width: 100%;
+  height: 18vw;
+  object-fit: cover;
+  border: 0.2vw solid #1c1c1c;
+  border-radius: 0.3vw;
+}
+
+.gallery-card h3 {
+  margin-top: 0.7vw;
+  font-size: 1.25vw;
+  color: #00bcff;
+}
+
+.gallery-card .author {
+  font-size: 1vw;
+  color: #33333;
+}
+
+@media (max-width: 1280px) {
+
+  .header-container,
+  .page-container {
+    max-width: 90vw;
+    margin: 2vw auto;
+    padding: 0 3.5vw;
+  }
+
+  .main-menu {
+    gap: 2.8vw;
+  }
+
+  .main-menu-link {
+    font-size: 1.25vw;
+  }
+
+  .page-title {
+    font-size: 2.5vw;
+  }
+
+  .section-title {
+    font-size: 1.8vw;
+  }
+
+  .section-text {
+    font-size: 1.2vw;
+  }
+
+  .contact-form {
+    max-width: 55vw;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .header-container,
+  .page-container {
+    max-width: 96vw;
+    padding: 0 3vw;
+    margin: 2vw auto;
+  }
+
+  .main-menu {
+    gap: 2.08vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu-link {
+    font-size: 2vw;
+  }
+
+  .page-title {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.2vw;
+  }
+
+  .section-text {
+    font-size: 1.6vw;
+  }
+
+  .contact-form {
+    max-width: 70vw;
+  }
+
+  /* опять картинки */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+  }
+
+  .gallery-card img {
+    height: 26vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    border-bottom-width: 0.7vw;
+  }
+
+  .header-container,
+  .page-container {
+    max-width: 100vw;
+    margin: 2vw auto;
+    padding: 0 4vw;
+  }
+
+  .main-menu {
+    gap: 3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu-link {
+    font-size: 3.5vw;
+    padding: 0.7vw 0;
+  }
+
+  .page-title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 4vw;
+  }
+
+  .section-text {
+    font-size: 3.2vw;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form-input,
+  .form-button {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 4vw;
+    margin-top: 4vw;
+  }
+
+  .gallery-card {
+    padding: 2.5vw;
+  }
+
+  .gallery-card img {
+    height: 50vw;
+  }
+
+  .gallery-card h3 {
+    font-size: 4vw;
+  }
+
+  .gallery-card .author {
+    font-size: 3.2vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-container,
+  .page-container {
+    padding: 0 4.5vw;
+  }
+
+  .main-menu {
+    gap: 2.5vw;
+  }
+
+  .main-menu-link {
+    font-size: 4vw;
+  }
+
+  .page-title {
+    font-size: 6vw;
+  }
+
+  .section-text {
+    font-size: 3.6vw;
+  }
+
+  .gallery-card img {
+    height: 55vw;
+  }
+
+  .form-label {
+    font-size: 3.3vw;
+  }
+
+  .form-input {
+    font-size: 3.4vw;
+    padding: 2.2vw 2.5vw;
+  }
+
+  .form-button {
+    font-size: 3.4vw;
+    padding: 2.5vw 0;
+  }
+
+}
