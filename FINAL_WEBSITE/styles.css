@@ -21,7 +21,7 @@ body {
 .header-container {
   max-width: 75vw;
   margin: 0 auto;
-  padding: 0.79vw 0;
+  padding: 0.8vw 0;
 }
 
 /* НАВИГАЦИЯ */
@@ -32,13 +32,13 @@ body {
 .main-menu {
   list-style: none;
   display: flex;
-  gap: 3.47vw;
+  gap: 3.5vw;
   align-items: center;
 }
 
 .main-menu-link {
   text-decoration: none;
-  font-size: 1.39vw;
+  font-size: 1.4vw;
   font-weight: bold;
   color: #ffffff;
   padding: 0.25vw 0;
