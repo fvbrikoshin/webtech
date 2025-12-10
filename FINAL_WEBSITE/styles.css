@@ -210,7 +210,7 @@ body {
 
 .form-input:focus {
   border-color: #888888;
-  box-shadow: 0 0 0 0.14vw rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.15vw rgba(0, 0, 0, 0.25);
   transform: translateY(-0.07vw);
 }
 
@@ -294,7 +294,7 @@ body {
 .gallery-card {
   background-color: #ffffff;
   border: 0.2vw solid #1c1c1c;
-  border-radius: 0.42vw;
+  border-radius: 0.4vw;
   padding: 0.7vw;
   box-shadow: 0 0.3vw 0 #1c1c1c;
   transition: transform 0.1s ease;
@@ -369,7 +369,7 @@ body {
   }
 
   .main-menu {
-    gap: 2.08vw;
+    gap: 2vw;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -509,7 +509,7 @@ body {
 
   .form-input {
     font-size: 3.4vw;
-    padding: 2.2vw 2.5vw;
+    padding: 2.5vw 2.5vw;
   }
 
   .form-button {
